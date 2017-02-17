@@ -1,0 +1,26 @@
+.nav {
+  min-height: 71px;
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #05aecc;
+  }
+
+  &__item {
+    height: 71px;
+    padding: 25px 31px 0;
+    line-height: 1.2;
+    color: #fff;
+    background: #05aecc;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+
+    &:hover {
+      color: #ef5966;
+      background: #fff;
+    }
+  }
+}

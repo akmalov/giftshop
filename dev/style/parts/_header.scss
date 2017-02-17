@@ -1,0 +1,140 @@
+.header {
+  min-height: 128px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 13px;
+  }
+
+  &__left {
+    margin-right: 20px;
+    padding: 19px 0 0 18px;
+  }
+
+  &__logo {
+    width: 151px;
+    height: 106px;
+  }
+
+  &__right {
+    width: 981px;
+  }
+
+  &__links, &__tiles {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__links {
+
+    &-item {
+      margin-right: 32px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-link {
+      display: block;
+      height: 38px;
+      padding-top: 8px;
+      line-height: 1.2;
+      letter-spacing: 1px;
+      color: #565656;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__tiles {
+    width: 100%;
+    background: #f6f6f6;
+
+    &-item {
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-link {
+      display: block;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      height: 89px;
+      line-height: 1.2;
+      letter-spacing: 1px;
+      color: #fff;
+
+      &_register {
+        padding-left: 26px;
+        padding-right: 26px;
+      }
+
+      &_register, &_whislost {
+        background: #05aecc;
+
+        &:hover {
+          background: darken(#05aecc, 10%);
+        }
+      }
+
+      &_signin, &_cart {
+        background: #f0626e;
+
+        &:hover {
+          background: darken(#f0626e, 10%);
+        }
+      }
+
+      &_signin {
+        padding-left: 31px;
+        padding-right: 31px;
+      }
+
+      &_whislost, &_cart {
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          background: url("../img/icons/common.png") no-repeat;
+        }
+      }
+
+      &_whislost {
+        padding-left: 18px;
+        padding-right: 52px;
+
+        &:after {
+          top: 31px;
+          right: 15px;
+          width: 23px;
+          height: 25px;
+          background-position: -204px -20px;
+        }
+      }
+
+      &_cart {
+        padding-left: 37px;
+        padding-right: 70px;
+
+        &:after {
+          top: 33px;
+          right: 35px;
+          width: 28px;
+          height: 24px;
+          background-position: -79px -20px;
+        }
+      }
+    }
+  }
+}
