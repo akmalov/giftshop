@@ -1,0 +1,129 @@
+.buy {
+  display: none;
+  height: 55px;
+  margin-bottom: 28px;
+  z-index: 10;
+  cursor: pointer;
+
+  &__shop {
+    height: 100%;
+    padding: 17px 6px 0 12px;
+    color: #fff;
+    letter-spacing: 1px;
+    background: #05aecc;
+
+    &:hover {
+      background: darken(#05aecc, 10%);
+    }
+  }
+
+  &__gift, &__cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &-sign {
+      background: url("../img/icons/common.png") no-repeat;
+    }
+
+    &:before, &:after {
+      position: absolute;
+      display: none;
+    }
+
+    &:before {
+      height: 21px;
+      font-size: 13px;
+      color: #434343;
+      background: #fff;
+      border: 1px solid #f0626e;
+      border-radius: 6px;
+    }
+  }
+
+  &__gift {
+    width: 51px;
+    height: 100%;
+    background: #00a1be;
+
+    &:before {
+      content: 'add to wishlist';
+      top: -31px;
+      left: -28px;
+      width: 84px;
+      padding: 6px 23px 0 24px;
+    }
+
+    &:hover {
+
+      &:before, &:after {
+        display: block;
+      }
+    }
+
+    &-sign {
+      width: 23px;
+      height: 25px;
+      background-position: -204px -20px;
+
+    }
+
+    &:hover {
+      background: darken(#00a1be, 10%);
+    }
+  }
+
+  &__cart {
+    width: 53px;
+    height: 100%;
+    background: #f0626e;
+
+    &:before {
+      content: 'add to cart';
+      top: -31px;
+      left: -30px;
+      width: 62px;
+      padding: 6px 23px 0 24px;
+    }
+
+    &:hover {
+
+      &:before, &:after {
+        display: block;
+      }
+    }
+
+    &-sign {
+      width: 28px;
+      height: 24px;
+      background-position: -79px -20px;
+    }
+
+    &:hover {
+      background: darken(#f0626e, 10%);
+    }
+  }
+
+  &__price {
+    padding: 14px 8px 0 15px;
+    color: #fff;
+    background: #323232;
+
+    &-dollar {
+      font-size: 16px;
+    }
+
+    &-main {
+      font-size: 24px;
+    }
+
+    &-cents {
+      font-size: 16px;
+    }
+
+    &:hover {
+      background: darken(#323232, 10%);
+    }
+  }
+}

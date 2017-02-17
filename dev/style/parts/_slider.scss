@@ -26,6 +26,8 @@
   &:after {
     content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: #000;
@@ -55,8 +57,7 @@
     height: 105px;
     margin-bottom: 2px;
     padding: 10px 0 0 22px;
-    background: #564962;
-    opacity: 0.8;
+    background: rgba(54, 42, 79, 0.8);
     text-transform: uppercase;
   }
 
@@ -85,12 +86,10 @@
     font-family: Aparajita;
     font-weight: 700;
     color: #fff;
-    background: #dd5564;
-    opacity: 0.878;
+    background: rgba(239, 89, 102, 0.878);
     text-transform: uppercase;
   }
 }
-
 
 .women, .kids {
   position: relative;
@@ -103,6 +102,8 @@
   &:after {
     content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: #000;
@@ -130,8 +131,7 @@
     height: 83px;
     margin-bottom: 8px;
     padding: 12px 17px 0 14px;
-    background: #564962;
-    opacity: 0.8;
+    background: rgba(54, 42, 79, 0.8);
     text-transform: uppercase;
   }
 
@@ -159,91 +159,4 @@
 .kids {
   height: 245px;
   background: url("../img/bg/kids.jpg") center center / cover no-repeat;
-}
-
-.buy {
-  display: none;
-  height: 55px;
-  margin-bottom: 28px;
-  z-index: 10;
-
-  &__shop {
-    height: 100%;
-    padding: 17px 6px 0 12px;
-    color: #fff;
-    letter-spacing: 1px;
-    background: #05aecc;
-
-    &:hover {
-      background: darken(#05aecc, 10%);
-    }
-  }
-
-  &__gift, &__cart {
-    position: relative;
-
-    &:after {
-      content: '';
-      position: absolute;
-      background: url("../img/icons/common.png") no-repeat;
-    }
-  }
-
-  &__gift {
-    width: 51px;
-    height: 100%;
-    background: #00a1be;
-
-    &:after {
-      top: 14px;
-      left: 15px;
-      width: 23px;
-      height: 25px;
-      background-position: -204px -20px;
-    }
-
-    &:hover {
-      background: darken(#00a1be, 10%);
-    }
-  }
-
-  &__cart {
-    width: 53px;
-    height: 100%;
-    background: #f0626e;
-
-    &:after {
-      top: 16px;
-      left: 13px;
-      width: 28px;
-      height: 24px;
-      background-position: -79px -20px;
-    }
-
-    &:hover {
-      background: darken(#f0626e, 10%);
-    }
-  }
-
-  &__price {
-    padding: 14px 8px 0 15px;
-    color: #fff;
-    background: #323232;
-
-    &-dollar {
-      font-size: 16px;
-    }
-
-    &-main {
-      font-size: 24px;
-    }
-
-    &-cents {
-      font-size: 16px;
-    }
-
-    &:hover {
-      background: darken(#323232, 10%);
-    }
-  }
 }

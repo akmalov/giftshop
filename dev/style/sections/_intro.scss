@@ -1,0 +1,172 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 26px;
+
+  &__top {
+    margin-bottom: 5px;
+  }
+
+  &__bottom {
+    display: flex;
+    height: 510px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    width: 670px;
+    margin-right: 5px;
+  }
+
+  &__right {
+    width: 494px;
+    height: 510px;
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 670px;
+  height: 171px;
+  margin-bottom: 4px;
+  background: #f0626e;
+
+  &__input {
+    width: 485px;
+    height: 71px;
+    margin-right: 21px;
+    padding: 0 20px 0 23px;
+    color: #555555;
+    letter-spacing: 1.2px;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &__submit {
+    position: relative;
+    width: 53px;
+    height: 53px;
+    background: #f0626e;
+    border: 1px solid #f0626e;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 53px;
+      height: 53px;
+      background: url("../img/icons/common.png") -377px -20px no-repeat;
+    }
+
+    &:hover {
+
+      &:after {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.crafts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 670px;
+  height: 335px;
+  background: url("../img/content/crafts.jpg") center center / cover no-repeat;
+}
+
+.buy_crafts {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.buy__title {
+  padding: 10px 47px 0 48px;
+  font-size: 30px;
+  color: #fff;
+  background: rgba(54, 42, 79, 0.8);
+  text-transform: uppercase;
+
+  &:hover {
+    background: darken(rgba(54, 42, 79, 0.8), 10%);
+  }
+}
+
+.buy__price_crafts {
+  padding-left: 21px;
+  padding-right: 19px;
+}
+
+.jewelry {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 494px;
+  height: 510px;
+  background: url("../img/content/jewelry.jpg") center center / cover no-repeat;
+
+  &__text-block {
+    position: relative;
+    width: 396px;
+    height: 87px;
+    margin-top: 26px;
+    padding: 12px 0 0 25px;
+    background-color: rgba(54, 42, 79, 0.58);
+    transform: rotate(-90deg);
+    transform-origin: right bottom;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-family: Aparajita;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__tape {
+    position: absolute;
+    bottom: 0;
+    right: 18px;
+    width: 86px;
+    height: 97px;
+    padding: 23px 0 0 16px;
+    background: #ee6470;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -10px;
+      border: 5px solid transparent;
+      border-right: 5px solid #ee6470;
+      border-bottom: 5px solid #ee6470;
+    }
+
+    &-circle {
+      width: 53px;
+      height: 53px;
+      border-radius: 50%;
+      background: #fff;
+      transform: rotate(90deg);
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        width: 15px;
+        height: 24px;
+        background: url("../img/icons/common.png") -525px -20px no-repeat;
+      }
+
+      &:hover {
+        background: darken(#fff, 10%);
+      }
+    }
+  }
+}
