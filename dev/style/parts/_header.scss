@@ -1,5 +1,6 @@
 .header {
   min-height: 128px;
+  margin-bottom: 15px;
 
   &__top {
     display: flex;
@@ -43,7 +44,6 @@
       display: block;
       height: 38px;
       padding-top: 8px;
-      line-height: 1.2;
       letter-spacing: 1px;
       color: #565656;
 
@@ -70,7 +70,6 @@
       padding-top: 35px;
       padding-bottom: 35px;
       height: 89px;
-      line-height: 1.2;
       letter-spacing: 1px;
       color: #fff;
 
