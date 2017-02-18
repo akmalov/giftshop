@@ -20,7 +20,7 @@
   align-items: flex-start;
   width: 670px;
   height: 570px;
-  background: url("../img/bg/men.jpg") center center / cover no-repeat;
+  background: url("../img/content/men.jpg") center center / cover no-repeat;
   cursor: pointer;
 
   &:after {
@@ -153,10 +153,10 @@
 .women {
   height: 320px;
   margin-bottom: 5px;
-  background: url("../img/bg/women.jpg") center center / cover no-repeat;
+  background: url("../img/content/women.jpg") center center / cover no-repeat;
 }
 
 .kids {
   height: 245px;
-  background: url("../img/bg/kids.jpg") center center / cover no-repeat;
+  background: url("../img/content/kids.jpg") center center / cover no-repeat;
 }

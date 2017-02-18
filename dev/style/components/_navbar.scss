@@ -10,6 +10,7 @@
   }
 
   &__item {
+    position: relative;
     height: 71px;
     padding: 25px 31px 0;
     color: #fff;
@@ -20,6 +21,10 @@
     &:hover {
       color: #ef5966;
       background: #fff;
+
+      .dropdown {
+        display: block;
+      }
     }
   }
 }
