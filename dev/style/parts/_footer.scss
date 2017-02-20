@@ -103,6 +103,7 @@
 .socials {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 
   &__item {
     position: relative;
